@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  datasource:
+    url: jdbc:mysql://192.168.0.15:3306/envers
+    tomcat:
+      connection-properties: useUnicode=true;characterEncoding=utf-8;
+    username: root
+    password: qlalfqjsghekd
+    driver-class-name: com.mysql.cj.jdbc.Driver
